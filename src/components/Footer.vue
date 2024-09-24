@@ -1,4 +1,4 @@
-<script >
+<script>
 
 </script>
 <template>
@@ -104,7 +104,7 @@
       <h5>
         &copysr; Todos os direitos reservados:
         <b style="color: grey">weTenGrow,</b>
-         {{ new Date().getFullYear() }} 
+        {{ new Date().getFullYear() }}
       </h5>
     </div>
   </div>
@@ -206,15 +206,20 @@
   }
 
   .content {
-    padding: 5px;
-    background-color: #f5eee2;
+
     width: 27%;
-    position: absolute;
-    bottom: -627px;
-    right: 36.5%;
-    border-radius: 50px;
+    position: relative;
+
+    /* bottom: -627px;
+    right: 36.5%; */
 
     h5 {
+      padding: 5px;
+      background-color: #f5eee2;
+      border-radius: 50px;
+      position: absolute;
+      bottom: -15px;
+      right: -524px;
       width: 100%;
       font-size: 1rem;
       text-align: center;

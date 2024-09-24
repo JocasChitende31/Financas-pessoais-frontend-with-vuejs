@@ -5,37 +5,37 @@
     <nav class="navigation">
       <li class="nav-list">
         <ul class="nav-list-item">
-          <RouterLink to="/">GESTACIONAR.SE</RouterLink>
+          <RouterLink to="/"  active-class="">GESTACIONAR.SE</RouterLink>
 
         </ul>
       </li>
       <li class="nav-list">
         <ul class="nav-list-item">
-          <a href="#">Meus Ganhos</a>
+          <RouterLink to="/meus-ganhos" >Meus Ganhos</RouterLink>
         </ul>
       </li>
       <li class="nav-list">
         <ul class="nav-list-item">
-          <a href="#">Minhas Despesas</a>
+          <RouterLink to="/minhas-despesas">Minhas Despesas</RouterLink>
         </ul>
       </li>
       <li class="nav-list">
         <ul class="nav-list-item">
-          <a href="#">Minhas Poupanças</a>
+          <RouterLink to="/minhas-poupancas">Minhas Poupanças</RouterLink>
         </ul>
       </li>
       <li class="nav-list">
         <ul class="nav-list-item">
-          <a href="#">Informações</a>
+          <RouterLink to="/meu-perfil">Informações</RouterLink>
         </ul>
       </li>
       <li class="nav-list">
         <ul class="nav-list-item">
-          <a href="#">Mais . . .</a>
+          <RouterLink to="/about">Mais . . .</RouterLink>
         </ul>
       </li>
     </nav>
-    <div class="corrency-amount">
+    <!-- <div class="corrency-amount">
       <div class="corrency">
         <div class="title">
           <h3>AOA-KWZ</h3>
@@ -51,35 +51,20 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="title-AOA">
+    </div> -->
+    <!-- <div class="title-AOA">
       <h3>AOA-KWZ</h3>
-    </div>
+    </div> -->
   </div>
 </template>
-
+<script setup></script>
 <style>
 .header {
   background-color: #f5eee2;
   width: 100%;
   height: 45vh;
 
-  .title-AOA {
-    display: flex;
-    position: relative;
-
-    bottom: 147px;
-    margin-left: 5px;
-    z-index: 1;
-
-    h3 {
-      color: white;
-      font-weight: bold;
-      letter-spacing: .05px;
-      font-size: 1.7rem;
-
-    }
-  }
+  
 }
 
 .navigation {
@@ -93,6 +78,7 @@
 
   .nav-list {
     padding: 1rem 1rem;
+    z-index: 2;
       .nav-list-item {
         a{
           font-size: 1rem;
@@ -103,6 +89,7 @@
 }
 
 .corrency-amount {
+
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
@@ -110,6 +97,10 @@
   height: 30vh;
   width: 75%;
 
+  position: absolute;
+  z-index: 1;
+  top: 73px;
+  
   .corrency {
     padding: 100px 75px;
     border-radius: 25px;
@@ -135,22 +126,28 @@
   }
 
   .amount {
-
     padding: 40px 10px;
     border-radius: 30px;
     background-color: hsl(33, 98%, 38%, 1);
     transform: rotate(45deg);
 
     .title {
-      display: flex;
-      position: relative;
+     
       transform: rotate(-45deg);
       color: white;
+      padding: 20px 50px;
 
       h3 {
-
-        font-weight: 500;
-
+        display: flex;
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0 0px 0 -16px;
+        text-align: center;
       }
     }
   }

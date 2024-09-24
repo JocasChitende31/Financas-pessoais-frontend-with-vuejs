@@ -1,6 +1,6 @@
 <template>
 <Header></Header>
-<h1>- Sobre </h1>
+<h1> - Meu Perfil</h1>
 <Footer></Footer>
 </template>
 <script setup>

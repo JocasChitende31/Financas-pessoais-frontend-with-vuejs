@@ -64,10 +64,10 @@
     row-gap: 10px;
 
     .card {
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 5px;
         margin: 0 auto;
-        padding: 10px;
+        padding: 30px;
         color: white;
 
         .card-header {
@@ -104,11 +104,13 @@
             background-color: white;
             transition: .3s all ease-in-out;
         }
-        a:hover{
+
+        a:hover {
             background-color: hsl(33, 98%, 38%, 0.2);
-           transition: .3s all ease-in-out;
+            transition: .3s all ease-in-out;
             color: white;
         }
+
         .line-devisor {
             border: .001px solid #ffffff44;
             margin: 20px 0;
