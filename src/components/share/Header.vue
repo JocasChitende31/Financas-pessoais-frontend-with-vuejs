@@ -1,9 +1,12 @@
+
+
 <template>
   <div class="header">
     <nav class="navigation">
       <li class="nav-list">
         <ul class="nav-list-item">
-          <a href="#">GESTACIONAR.SE</a>
+          <RouterLink to="/">GESTACIONAR.SE</RouterLink>
+
         </ul>
       </li>
       <li class="nav-list">

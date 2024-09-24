@@ -9,13 +9,11 @@ import Footer from "./share/Footer.vue"
 <Home></Home>
 <Footer></Footer>
 
-
 </template>
 
 <style>
 *{
-    
-    /* max-width: 1280px; */
+    /* max-width: 1280px;*/
     padding: 0;
     margin: 0;
 }
