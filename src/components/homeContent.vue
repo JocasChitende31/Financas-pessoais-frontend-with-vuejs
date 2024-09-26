@@ -3,7 +3,7 @@
         <div class="card ganhos">
             <div class="card-top">
 
-                <img class="img-icon" src="https://cdn-icons-png.flaticon.com/256/8305/8305563.png" alt="" width="70px">
+                <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/7909/7909323.png" alt="" width="70px">
 
                 <h3 style="display: flex;">300.000,00</h3>
             </div>
@@ -19,7 +19,7 @@
         </div>
         <div class="card despesas">
             <div class="card-top">
-                <img class="img-icon" src="https://cdn-icons-png.flaticon.com/256/7544/7544934.png" alt="" width="70px">
+                <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/4185/4185572.png" alt="" width="70px">
                 <h3>200.000,00</h3>
             </div>
             <div class="line-devisor"></div>
@@ -29,12 +29,12 @@
                     dolore expedita deleniti eveniet quas, dicta, odit aliquam hic maxime illum accusantium repellendus
                     incidunt perferendis vel recusandae.</p>
             </div>
-            <a href="#">Saber mais ...</a>
+            <a href="#" style="color: #162249;">Saber mais ...</a>
 
         </div>
         <div class="card poupancas">
             <div class="card-top">
-                <img class="img-icon" src="https://cdn-icons-png.flaticon.com/256/11257/11257198.png" alt="" width="70">
+                <img class="img-icon" src="https://cdn-icons-png.flaticon.com/128/748/748281.png" alt="" width="70">
                 <h3>100.000,00</h3>
             </div>
             <div class="line-devisor"></div>
@@ -99,7 +99,7 @@
 
         a {
             margin: 5px;
-            padding: 2px 5px;
+            padding: 2px 15px;
             border: 1px solid gray;
             background-color: white;
             transition: .3s all ease-in-out;
@@ -112,8 +112,8 @@
         }
 
         .line-devisor {
-            border: .001px solid #ffffff44;
-            margin: 20px 0;
+            border: 1px solid #ffffff44;
+            margin: 20px 0 5px 0;
         }
 
     }

@@ -8,7 +8,8 @@
 
                 <h3 style="display: flex;">300.000,00</h3>
             </div>
-            <div class="line-devisor"></div>
+            <div class="line-devisor" style=" border: 1px solid #ffffff44;
+            margin: 20px 0 5px 0;"></div>
             <div class="card-bottom">
                 <h3>Meus Ganhos</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis rem corporis atque
@@ -140,6 +141,12 @@ import Footer from '@/components/Footer.vue';
 
         color: white;
 
+        .line-devisor {
+            border: 1px solid #ffffff44;
+            margin: 20px 0;
+           
+        }
+
         .card-top {
             display: flex;
             justify-content: space-between;
@@ -165,7 +172,7 @@ import Footer from '@/components/Footer.vue';
 
         a {
             margin: 5px;
-            padding: 2px 5px;
+            padding: 2px 15px;
             border: 1px solid gray;
             background-color: white;
             transition: .3s all ease-in-out;
@@ -232,21 +239,24 @@ import Footer from '@/components/Footer.vue';
                 }
 
                 button {
-                    padding: 5px 8px;
-                    color: hsla(33, 98%, 38%, 1);
+                    padding: 5px 15px;
+                    margin: 5px 0;
+                    background-color: hsla(33, 98%, 38%, 1);
+                    color: white;
                     border: .5px solid hsla(33, 98%, 38%, 1);
                     border-radius: 5px;
+
 
                     cursor: pointer;
                 }
             }
 
-            
+
         }
 
         .card:hover {
             border: .5px solid hsla(33, 98%, 38%, 0.4);
-             transition: .5s all ease-in-out;
+            transition: .5s all ease-in-out;
         }
 
         .mt {

@@ -1,6 +1,6 @@
 <template>
-<Header></Header>
-<div class="source-content">
+    <Header></Header>
+    <div class="source-content">
         <div class="card-left">
             <div class="card-top">
 
@@ -8,7 +8,8 @@
 
                 <h3 style="display: flex;">100.000,00</h3>
             </div>
-            <div class="line-devisor"></div>
+            <div class="line-devisor" style=" border: 1px solid #ffffff44;
+            margin: 20px 0 5px 0;"></div>
             <div class="card-bottom">
                 <h3>Minhas Poupanças</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia reiciendis rem corporis atque
@@ -86,7 +87,7 @@
                         <img src="https://cdn-icons-png.flaticon.com/128/4258/4258331.png" width="150px" alt="">
                     </div>
                     <div class="card-subcontent">
-                        <h3>Meio de Transporte</h3>
+                        <h3>Transporte</h3>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem deserunt delectus
                             dolorem corrupti ut ad earum ipsam? Natus, excepturi magnam! Lorem ipsum dolor sit amet
@@ -107,11 +108,10 @@
             </div>
         </div>
     </div>
-<Footer></Footer>
+    <Footer></Footer>
 </template>
 <script setup>
 import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue'
 </script>
-<style>
-</style>
+<style></style>

@@ -95,13 +95,14 @@
   /* justify-content: space-between; */
   padding: .5rem 2rem;
   height: 30vh;
-  width: 75%;
+  width: 70%;
 
   position: absolute;
   z-index: 1;
   top: 73px;
   
   .corrency {
+    display: none;
     padding: 100px 75px;
     border-radius: 25px;
     background-color: hsl(33, 98%, 38%, 1);
@@ -126,16 +127,22 @@
   }
 
   .amount {
-    padding: 40px 10px;
+    /* padding: 20px 5px;
     border-radius: 30px;
     background-color: hsl(33, 98%, 38%, 1);
-    transform: rotate(45deg);
+    transform: rotate(45deg); */
 
     .title {
      
-      transform: rotate(-45deg);
+      /* transform: rotate(-45deg); */
       color: white;
-      padding: 20px 50px;
+      padding: 10px 20px;
+
+      img{
+        width: 200px;
+        height: fit-content;
+        opacity: .6;
+      }
 
       h3 {
         display: flex;
