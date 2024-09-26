@@ -9,7 +9,7 @@
             <p> &nbsp;&nbsp;&nbsp;&nbsp;&ast;No intuito de auxiliar a gestão financeira pessoal da sociedade em
                 geral, urgiu a necessidade de criar um pequeno sistema web capaz de controlar e gerir os ganhos,
                 despesas e poupanças de qualquer cidadão que queira ver sua vida facilitadada com o
-                <b>GESTACIONAR.SE</b>.
+                <b style="color:black; font-weight: bold;">GESTACIONAR.SE</b>.
             </p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&ast;Este sistema é seguro e acessível apenas por usários credenciados, ademais,
                 os dados são trabalhados e criptogrados de formas que cada um apenas consiga ver suas informações. Nele
@@ -18,12 +18,14 @@
                 forncecer detalhes de suas rendas brutas e liquidas. </p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&ast;Ainda, permite também declara suas poupanças e despesas periódicas, de
                 maneira simples e rápida.</p>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp;&ast;Construiu-se uma solução capaz, não só pata declaração de activos e passivos
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&ast;Construiu-se uma solução capaz, não só para declaração de activos e passivos
                 do funcionário e outros, mais que vai também de forma muito intuitiva levar aos nossos clientes
                 mensagens de alerta ea advices para melhor usar e distruibuir seus ganhos.</p>
-                <br>
-                <a href="" style="padding: 5px 10px; font-size: 1.5rem; letter-spacing: .05rem; border: 1px solid hsla(33, 98%, 38%, 1); background-color:hsla(33, 98%, 38%, 1); color:white;">Alguma questão? Clique aqui!</a>
-            </div>
+            <br>
+            <a href=""
+                style="padding: 5px 10px; font-size: 1.5rem; letter-spacing: .05rem; border: 1px solid hsla(33, 98%, 38%, 1); background-color:hsla(33, 98%, 38%, 1); color:white;">Alguma
+                questão? Clique aqui!</a>
+        </div>
     </div>
     <Footer></Footer>
 </template>
