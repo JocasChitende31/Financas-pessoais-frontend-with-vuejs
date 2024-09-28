@@ -10,7 +10,6 @@
                     <h3>Rua 50, Urbanização Nova Vida, Kilamba-Kiaxi, Angola </h3>
                 </div>
                 <a href="">Editar</a>
-
             </div>
             <div class="devisor">
 
@@ -18,21 +17,23 @@
             <div class="settings">
                 <h2>Configurações</h2>
                 <div class="options">
-                    <div class="option-card">
+                    <div class="option-card" id="example-1">
                         <h3>Meus Ganhos</h3>
-                        <a href="">Entrar na Gestão</a>
+                        <button @click="icrement">Entrar na Gestão</button>
                     </div>
                     <div class="option-card">
                         <h3>Minhas Despesas</h3>
-                         <a href="">Entrar na Gestão</a>
+                        <button href="">Entrar na Gestão</button>
                     </div>
                     <div class="option-card">
                         <h3>Minhas Poupanças</h3>
-                         <a href="">Entrar na Gestão</a>
+                        <button href="">Entrar na Gestão</button>
 
                     </div>
                 </div>
+
             </div>
+            <h3>Contador: {{ count}}</h3>
         </div>
 
 
@@ -42,8 +43,22 @@
 <script setup>
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
+
+import { onMounted ,ref} from 'vue'
+
+const count = ref(0)
+
+function icrement(){
+
+    count.value ++
+}
+
+onMounted(()=>{
+console.log(`Counter: ${count.value}.`)
+})
+
 </script>
-<style>
+<style> 
 .perfil {
 
     height: auto;
@@ -99,7 +114,8 @@ import Footer from '@/components/Footer.vue';
                 margin: 0 0 30px 0;
                 font-weight: bold;
                 letter-spacing: .005rem;
-                color: hsl(33, 98%, 38%, 1);;
+                color: hsl(33, 98%, 38%, 1);
+                ;
             }
 
             .options {
@@ -123,10 +139,24 @@ import Footer from '@/components/Footer.vue';
                         border-top-left-radius: 5px;
                         border-top-right-radius: 5px;
                     }
-                    a{
+
+                    button {
                         display: flex;
                         justify-content: center;
-                        padding: 5px 0;
+                        padding: 10px 0;
+                        width: 100%;
+                        border: none;
+                        color: hsl(33, 98%, 38%, 1);
+                        background-color: #f5eee2;
+                        font-size: .91rem;
+
+                    }
+
+                    button:hover {
+                        background-color: hsl(33, 98%, 38%, 0.2);
+                        ;
+                        cursor: pointer;
+
                     }
                 }
 

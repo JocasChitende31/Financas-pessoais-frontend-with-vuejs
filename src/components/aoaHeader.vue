@@ -21,7 +21,8 @@
         <h3>AOA-KWZ</h3>
     </div>
     <div class="description">
-        <h5>A Sua Gestão Pessoal Você Faz Aqui - <b>&copysr;weTenGrow</b>, <span>melhoramos para juntos crecer.</span></h5>
+        <h5>A sua gestão pessoal você faz aqui - <b>&copysr;weTenGrow</b>, <span>melhoramos para juntos crescer.</span>
+        </h5>
     </div>
 </template>
 <script setup>
@@ -33,39 +34,41 @@
     display: flex;
     position: absolute;
 
-    top:160px;
-    left: 25px;
+    top: 155px;
+    left: 28px;
     /* bottom: 200px; */
     margin-left: 5px;
     z-index: 1;
+
     h3 {
-      /* color: hsl(33, 87%, 50%); */
-      color: hsl(33, 87%, 50%);
-      font-weight: bold;
-      letter-spacing: .05px;
-      font-size: 1.7rem;
-      opacity: .8;
+        /* color: hsl(33, 87%, 50%); */
+        color: hsl(33, 87%, 50%);
+        font-weight: bold;
+        letter-spacing: .05px;
+        font-size: 2rem;
+        opacity: .8;
 
     }
-  }
-  .description{
+}
+
+.description {
     position: absolute;
-    top:197px;
-    left: 30px;
+    top: 196px;
+    left: 32px;
     /* left: 188.5px; */
 
-    h5{
-    color: grey;
-    font-weight: 500;
-    opacity: .8;
-    letter-spacing: .5px;
-    font-size: .88rem;
-
-    b{
+    h5 {
+        color: black;
         font-weight: 500;
-        color: #162249;
-         opacity: .8;
+        opacity: .8;
+        letter-spacing: .5px;
+        font-size: 1rem;
+
+        b {
+            font-weight: 500;
+            color: #162249;
+            opacity: .8;
+        }
     }
-    }
-  }
+}
 </style>
