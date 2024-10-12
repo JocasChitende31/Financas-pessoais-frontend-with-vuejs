@@ -1,5 +1,5 @@
 <template>
-    <Header></Header>
+    <Header />
     <div class="perfil">
         <div class="perfil-card">
             <div class="card">
@@ -9,7 +9,7 @@
                     <h3>joshtende03@gmail.com</h3>
                     <h3>Rua 50, Urbanização Nova Vida, Kilamba-Kiaxi, Angola </h3>
                 </div>
-                <a href="">Editar</a>
+                <a href="" style="padding: 10px 20px;">Editar  <i class="large material-icons" style="font-size:medium;">border_color</i></a>
             </div>
             <div class="devisor">
 
@@ -19,46 +19,33 @@
                 <div class="options">
                     <div class="option-card" id="example-1">
                         <h3>Meus Ganhos</h3>
-                        <button @click="icrement">Entrar na Gestão</button>
+                            <RouterLink to="/user/_menagerSources">Entrar na Gestão <i class="large material-icons">trending_flat</i>
+                            </RouterLink>
                     </div>
                     <div class="option-card">
                         <h3>Minhas Despesas</h3>
-                        <button href="">Entrar na Gestão</button>
+                        <RouterLink to="/user/_menagerExpenses" >Entrar na Gestão <i class="large material-icons">trending_flat</i></RouterLink>
+
                     </div>
                     <div class="option-card">
                         <h3>Minhas Poupanças</h3>
-                        <button href="">Entrar na Gestão</button>
+                        <RouterLink to="/user/_menagerSavings" >Entrar na Gestão <i class="large material-icons">trending_flat</i></RouterLink>
 
                     </div>
                 </div>
 
             </div>
-            <h3>Contador: {{ count}}</h3>
         </div>
-
-
     </div>
-    <Footer></Footer>
+    <Footer />
 </template>
 <script setup>
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 
-import { onMounted ,ref} from 'vue'
-
-const count = ref(0)
-
-function icrement(){
-
-    count.value ++
-}
-
-onMounted(()=>{
-console.log(`Counter: ${count.value}.`)
-})
-
+const props = defineProps(['title'])
 </script>
-<style> 
+<style>
 .perfil {
 
     height: auto;
@@ -131,6 +118,7 @@ console.log(`Counter: ${count.value}.`)
                     padding: 0;
                     background-color: #f5eee2;
                     border-radius: 5px;
+                    height: fit-content;
 
                     h3 {
                         background-color: hsl(33, 98%, 38%, 1);
@@ -140,28 +128,35 @@ console.log(`Counter: ${count.value}.`)
                         border-top-right-radius: 5px;
                     }
 
-                    button {
+                    a {
                         display: flex;
                         justify-content: center;
+                        align-items: center;
                         padding: 10px 0;
                         width: 100%;
+                        height: fit-content;
                         border: none;
                         color: hsl(33, 98%, 38%, 1);
+                        font-size: 1rem;
+                        font-weight: 500;
+                        letter-spacing: .02rem;
                         background-color: #f5eee2;
-                        font-size: .91rem;
 
+                        i{
+                        font-size: 2rem;
+                        margin-left: 5px;
+                    }
                     }
 
-                    button:hover {
+                    a:hover {
                         background-color: hsl(33, 98%, 38%, 0.2);
-                        ;
                         cursor: pointer;
 
                     }
+                    
                 }
-
+                
                 .option-card:nth-child(2) {
-
 
                     h3 {
                         background-color: #162249;
@@ -170,6 +165,12 @@ console.log(`Counter: ${count.value}.`)
                         padding: 20px 0;
                     }
 
+                    a{
+                        border-radius: 0;
+                    }
+                    a:hover{
+                        border-radius: 0;
+                    }
                 }
             }
         }

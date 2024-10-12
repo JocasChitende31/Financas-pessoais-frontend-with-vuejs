@@ -5,33 +5,33 @@
     <nav class="navigation">
       <li class="nav-list">
         <ul class="nav-list-item">
-          <RouterLink to="/"  active-class="">GESTACIONAR.SE</RouterLink>
+          <RouterLink to="/" style="font-weight: bolder;" >GESTACIONAR.SE</RouterLink>
 
         </ul>
       </li>
       <li class="nav-list">
         <ul class="nav-list-item">
-          <RouterLink to="/meus-ganhos" >Meus Ganhos</RouterLink>
+          <RouterLink to="/meus-ganhos"  >Meus ganhos</RouterLink>
         </ul>
       </li>
       <li class="nav-list">
         <ul class="nav-list-item">
-          <RouterLink to="/minhas-despesas">Minhas Despesas</RouterLink>
+          <RouterLink to="/minhas-despesas">Minhas despesas</RouterLink>
         </ul>
       </li>
       <li class="nav-list">
         <ul class="nav-list-item">
-          <RouterLink to="/minhas-poupancas">Minhas Poupanças</RouterLink>
+          <RouterLink to="/minhas-poupancas">Minhas poupanças</RouterLink>
         </ul>
       </li>
       <li class="nav-list">
         <ul class="nav-list-item">
-          <RouterLink to="/meu-perfil">Informações</RouterLink>
+          <RouterLink to="/user/name"><i class="large material-icons" >person</i></RouterLink>
         </ul>
       </li>
       <li class="nav-list">
         <ul class="nav-list-item">
-          <RouterLink to="/about">Mais . . .</RouterLink>
+          <RouterLink to="/about">Sobre</RouterLink>
         </ul>
       </li>
     </nav>
@@ -73,21 +73,36 @@
   padding: .5rem 0;
   list-style: none;
   border-bottom: 1px solid #BF6A0242;
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
+  /* margin: 0 auto; */
+  letter-spacing: .6px;
+  background-color: white;
+  z-index: 9;
 
+  position: fixed;
   .nav-list {
     padding: 1rem 1rem;
     z-index: 2;
       .nav-list-item {
         a{
-          font-size: 1rem;
+          font-size: 1.1rem;
+          font-weight: 500;
         }
       }
   }
 
 }
-
+.border-indigo-500{
+  color: hsl(33, 98%, 38%);
+}
+.border-indigo-700{
+/* background-color: hsl(33, 98%, 38%); */
+border-bottom: 2px solid hsl(33, 98%, 38%);
+position:relative;
+border-radius:0;
+transition:all .4s ease-in-out;
+  
+}
 .corrency-amount {
 
   display: flex;

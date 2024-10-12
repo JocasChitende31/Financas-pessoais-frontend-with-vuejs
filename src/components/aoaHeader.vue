@@ -62,7 +62,7 @@
         font-weight: 500;
         opacity: .8;
         letter-spacing: .5px;
-        font-size: 1rem;
+        font-size: 1.2rem;
 
         b {
             font-weight: 500;

@@ -5,8 +5,24 @@ import Perfil from "@/views/perfil.vue";
 import Saving from "@/views/saving.vue";
 import Sources from "@/views/sources.vue";
 import { createWebHashHistory, createMemoryHistory, createRouter } from "vue-router";
+import _menagerSavings from "@/views/_menagerSavings.vue";
+import _menagerSources from "@/views/_menagerSources.vue";
+import _menagerExpenses from "@/views/_menagerExpenses.vue";
+import _homeSources from "@/views/_homeSources.vue";
+import _homeExpenses from "@/views/_homeExpenses.vue";
+import _homeSavings from "@/views/_homeSavings.vue";
+import _formSource from "@/views/_formSource.vue";
+import _formExpense from "@/views/_formExpense.vue";
+import _formSaving from "@/views/_formSaving.vue";
+import _listSource from "@/views/_listSource.vue";
+import _listExpenses from "@/views/_listExpenses.vue";
+import _listSavings from "@/views/_listSavings.vue";
+import _othreSource from "@/views/_othreSource.vue";
+import _otherExpense from "@/views/_otherExpense.vue";
+import _otherSaving from "@/views/_otherSaving.vue";
 
 const routes = [
+
     {
         path: '/',
         component: Home
@@ -24,8 +40,48 @@ const routes = [
         component: Saving
     },
     {
-        path: '/meu-perfil',
-        component: Perfil
+        path: '/user/name',
+        component: Perfil,
+    },
+    {
+        path: '/user/_menagerSources',
+        component: _menagerSources,
+        children: [
+            {
+                path: '/user/_menagerSources/home', component: _homeSources
+            }
+            ,
+            {
+
+                path: '/_all_s', component: _listSource
+            },
+            {
+                path: '/_add_s', component: _formSource
+            },
+            {
+                path: '/_settings_s', component: _othreSource
+            }
+        ]
+    },
+    {
+        path: '/user/_menagerExpenses',
+        component: _menagerExpenses,
+        children: [
+            { path: '/user/_menagerExpense', component: _homeExpenses },
+            { path: '/_all_e', component: _listExpenses },
+            { path: '/_add_e', component: _formExpense },
+            { path: '/_settings_e', component: _otherExpense }
+        ]
+    },
+    {
+        path: '/user/_menagerSavings',
+        component: _menagerSavings,
+        children: [
+            { path: '/user/_menagerSavings', component: _homeSavings },
+            { path: '/_all_sv', component: _listSavings },
+            { path: '/_add_sv', component: _formSaving },
+            { path: '/_settings_sv', component: _otherSaving }
+        ]
     },
     {
         path: '/about',
@@ -34,6 +90,8 @@ const routes = [
 ]
 
 const router = createRouter({
+    linkActiveClass: 'border-indigo-500',
+    linkExactActiveClass: 'border-indigo-700',
     history: createWebHashHistory(),
     routes
 });

@@ -14,14 +14,17 @@ a,
   color: hsl(33, 98%, 38%, 1);
   transition: 0.5s;
   border-top-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
-  padding: 3px 4px;
+  /* border-bottom-right-radius: .5rem; */
+  padding: 3px 5px;
+  transition: all .4s ease-in-out;
 }
 
 @media (hover: hover) {
   a:hover {
     /* background-color: hsla(160, 100%, 37%, 0.2); */
-    background-color: hsl(33, 98%, 38%, 0.2);
+    background-color: hsl(33, 98%, 38%);
+    transition: all .5s ease-in-out;
+    color: white;
   }
 }
 
