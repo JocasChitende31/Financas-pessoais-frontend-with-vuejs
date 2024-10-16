@@ -53,13 +53,13 @@ const routes = [
             ,
             {
 
-                path: '/_all_s', component: _listSource
+                path: '/menagerSource/_all', component: _listSource
             },
             {
-                path: '/_add_s', component: _formSource
+                path: '/menagerSource/_add', component: _formSource
             },
             {
-                path: '/_settings_s', component: _othreSource
+                path: '/menagerSource/_settings', component: _othreSource
             }
         ]
     },
@@ -77,7 +77,7 @@ const routes = [
         path: '/user/_menagerSavings',
         component: _menagerSavings,
         children: [
-            { path: '/user/_menagerSavings', component: _homeSavings },
+            { path: '/user/_menagerSaving', component: _homeSavings },
             { path: '/_all_sv', component: _listSavings },
             { path: '/_add_sv', component: _formSaving },
             { path: '/_settings_sv', component: _otherSaving }
