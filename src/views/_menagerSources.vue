@@ -9,14 +9,14 @@
                     <RouterLink to="/user/_menagerSources/home"> <i class="large material-icons">home</i> </RouterLink>
                 </ul>
                 <ul>
-                    <RouterLink to="/_all_s"> <i class="large material-icons">playlist_add_check</i> registos
+                    <RouterLink to="/menagerSource/_all"> <i class="large material-icons">playlist_add_check</i> registos
                     </RouterLink>
                 </ul>
                 <ul>
-                    <RouterLink to="/_add_s"> <i class="large material-icons">add</i> registo</RouterLink>
+                    <RouterLink to="/menagerSource/_add"> <i class="large material-icons">add</i> registo</RouterLink>
                 </ul>
                 <ul>
-                    <RouterLink to="/_settings_s"> <i class="large material-icons">more_horiz</i></RouterLink>
+                    <RouterLink to="/menagerSource/_settings"> <i class="large material-icons">more_horiz</i></RouterLink>
                 </ul>
                 <div class="menager_title"><h3>GERIR MEUS GANHOS</h3></div>
             </li>

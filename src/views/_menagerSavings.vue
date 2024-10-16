@@ -6,7 +6,7 @@
             </RouterLink>
             <li>
                 <ul>
-                    <RouterLink to="/user/_menagerSavings"> <i class="large material-icons">home</i> </RouterLink>
+                    <RouterLink to="/user/_menagerSaving"> <i class="large material-icons">home</i> </RouterLink>
                 </ul>
                 <ul>
                     <RouterLink to="/_all_sv"> <i class="large material-icons">playlist_add_check</i> registos
